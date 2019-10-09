@@ -149,59 +149,43 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-html,
-body {
-  height: 100%;
-  font-family: "Titillium Web", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-}
-
 /* Your code starts here! */
-
 html,
 body {
   margin: 25px auto;
-  width: 976px;
+  width: 876px;
 }
 
-.container {
-  width: auto;
-  padding: 0px 0px 50px 0px;
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .navigation a {
   color: grey;
   text-decoration: none;
-  float: left;
-  display: block;
-  padding: 14px 30px;
+  margin-right: 65px;
+  display: flex;
+  align-items: flex-end;
 }
 
-.navigation .logo {
-  padding-left: 100px;
-}
-
-.header {
-  float: left;
-  width: 50%;
-  padding: 60px;
+.section1 {
+  margin: 40px 0px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header .demand h1 {
+.section1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.section1 h1 {
   font-size: 70px;
-  box-sizing: border-box;
 }
 
 .button {
@@ -209,13 +193,8 @@ body {
   color: black;
   border: 2px solid black;
   font-size: 16px;
-  padding: 5px 35px;
-}
-
-.code_pic {
-  display: inline-block;
-  padding-right: 20px;
-  width: 50%;
+  padding: 5px 0px;
+  width: 200px;
 }
 
 .border_one {
@@ -224,52 +203,35 @@ body {
   margin: 75px 0px 25px 0px;
 }
 
-.column_one {
-  float: left;
-  width: 50%;
-  padding: 15px;
-  text-align: left;
-}
-
-.section_one:after {
-  content: "";
-  display: table;
-  clear: both;
+.section2 {
+  display: flex;
+  height: 125px;
 }
 
 .middle-img {
-  margin: 100px;
-}
-
-#middle-img {
-  padding: 40px 0;
-}
-
-.column_two {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
-
-.section_two:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-footer {
   margin: 25px 0px;
 }
 
-footer .phone_number {
-  padding: 25px 0px 0px 0px;
+.section3 {
+  display: flex;
 }
 
-footer .email {
-  padding: 25px 0px 0px 0px;
+.section3 div {
+  margin: 0px 5px;
 }
 
-footer .copyright {
-  margin: 50px;
-  text-align: center;
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+address p {
+  margin: 20px 0px;
+}
+
+.copyright {
+  margin: 35px;
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
