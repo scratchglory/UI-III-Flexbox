@@ -108,10 +108,10 @@ section {
 body {
   line-height: 1;
 }
-ol,
+/* ol,
 ul {
   list-style: none;
-}
+} */
 blockquote,
 q {
   quotes: none;
@@ -129,33 +129,113 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-html {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Set every element's box-sizing to border-box */
+html,
+body {
   margin: 25px auto;
-  width: 880px;
+  width: 900px;
+}
+
+.services-header-img {
+  margin: 25px 0px;
 }
 
 .navigation {
-  width: 800px;
+  width: auto;
   height: 50px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .navigation a {
   color: grey;
   text-decoration: none;
-  margin-right: 65px;
+  margin-right: 10px;
   display: flex;
   align-items: flex-end;
+  margin-right: 68px;
 }
+
+img .services-header-img {
+  margin: 25px 0px;
+}
+
+.section1 {
+  margin: 25px 0px;
+  width: 900px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.section1 div {
+  width: 48%;
+  border: 2px solid black;
+  background: lightgrey;
+  padding: 18px;
+  margin-bottom: 40px;
+}
+
+.web_dev,
+.android_dev {
+  margin-left: auto;
+}
+
+.ux_ui {
+  margin-left: auto;
+}
+
+.section1 .learn_more {
+  background-color: white;
+  border: 2px solid black;
+  font-size: 14px;
+  margin: 15px 0px;
+  padding: 5px 0px;
+  width: 150px;
+}
+
+.section2 {
+  display: flex;
+}
+
+.section2 .some_facts {
+  margin: 0px 50px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 p {
+  margin: 25px 0px;
+}
+
 .border_one {
   border-top: 2px solid black;
   width: auto;
-  margin: 75px 0px 25px 0px;
+  margin: 25px 0px;
 }
 
 .copyright {
-  margin: 35px;
+  margin: 100px;
   width: auto;
   display: flex;
   justify-content: center;
