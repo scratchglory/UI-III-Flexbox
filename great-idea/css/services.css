@@ -150,6 +150,10 @@ h5 {
 }
 
 /* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 25px auto;
