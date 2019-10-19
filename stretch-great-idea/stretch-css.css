@@ -170,8 +170,6 @@ h5 {
   color: grey;
   text-decoration: none;
   margin-right: 10px;
-  display: flex;
-  align-items: flex-end;
   margin-right: 68px;
 }
 
@@ -250,3 +248,11 @@ address p {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 700px) {
+  .section1 {
+    flex-direction: column;
+  }
+}
+
+/* tablet sizes etc */
